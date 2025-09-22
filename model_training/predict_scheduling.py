@@ -3,9 +3,20 @@ import pickle
 
 # Function to predict scheduling model (copied from your code for completeness)
 def predict_scheduling(timestamp, cars_present, emergency_vehicle):
-    # Load the pickled objects
-    with open('traffic_scheduler_model.pkl', 'rb') as f:
-        objs = pickle.load(f)
+    import os
+    import time
+    # Load the pickled objects with retry logic
+    model_path = os.path.join(os.path.dirname(__file__), 'traffic_scheduler_model.pkl')
+    
+    for attempt in range(3):
+        try:
+            with open(model_path, 'rb') as f:
+                objs = pickle.load(f)
+            break
+        except (FileNotFoundError, EOFError, pickle.UnpicklingError) as e:
+            if attempt == 2:
+                raise e
+            time.sleep(0.1)  # Brief delay before retry
     
     # Prepare input data
     df = pd.DataFrame({

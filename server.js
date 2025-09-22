@@ -57,10 +57,12 @@ function getPredictedScheduling(timestamp, carsPresent, emergencyVehicle) {
   });
 }
 
-// Function to append data to CSV
+// Function to append data to CSV (non-blocking)
 function appendToDataCSV(timestamp, carsPresent, emergencyVehicle, schedulingModel) {
   const csvLine = `${timestamp},${carsPresent},${emergencyVehicle},${schedulingModel}\n`;
-  fs.appendFileSync('model_training/data.csv', csvLine, 'utf8');
+  fs.appendFile('model_training/data.csv', csvLine, 'utf8', (err) => {
+    if (err) console.error('[CSV ERROR]', err);
+  });
   console.log(`[DATA LOG] ${csvLine.trim()}`);
 }
 
@@ -94,6 +96,32 @@ function trainModel() {
   });
 }
 
+// Function to intelligently select scheduling algorithm
+function selectOptimalScheduling(carsPresent, emergencyVehicle, violationHistory) {
+  // Emergency vehicles always get priority
+  if (emergencyVehicle > 0) {
+    return 'Priority Scheduling';
+  }
+  
+  // High traffic scenarios
+  if (carsPresent > 30) {
+    return 'Shortest Job First';
+  }
+  
+  // Medium traffic with recent violations
+  if (carsPresent > 15 && violationHistory.length > 2) {
+    return 'Shortest Job First';
+  }
+  
+  // Low traffic
+  if (carsPresent < 10) {
+    return 'Round Robin';
+  }
+  
+  // Default for medium traffic
+  return 'Round Robin';
+}
+
 // Function to detect rule violations
 function detectRuleViolations(data) {
   const violations = [];
@@ -125,6 +153,16 @@ function detectRuleViolations(data) {
       message: 'Low traffic but using complex Shortest Job First',
       timestamp: data.timestamp,
       severity: 'LOW'
+    });
+  }
+  
+  // Rule 4: Collision risk in heavy emergency traffic
+  if (data.carsPresent > 20 && data.emergencyVehicle > 2) {
+    violations.push({
+      type: 'Multi-Emergency Collision Risk',
+      message: 'Multiple emergency vehicles in heavy traffic',
+      timestamp: data.timestamp,
+      severity: 'CRITICAL'
     });
   }
   
@@ -202,8 +240,33 @@ app.post('/api/log-traffic', async (req, res) => {
     const { carsPresent, emergencyVehicle } = req.body;
     const timestamp = new Date().toISOString();
     
-    // Get prediction for current state
-    const currentScheduling = await getPredictedScheduling(timestamp, carsPresent, emergencyVehicle);
+    // Use intelligent algorithm selection
+    const recentViolations = ruleViolations.slice(-5); // Last 5 violations for context
+    const optimalScheduling = selectOptimalScheduling(carsPresent, emergencyVehicle, recentViolations);
+    
+    // Try ML prediction as backup/validation
+    let mlPrediction = 'Round Robin';
+    try {
+      mlPrediction = await getPredictedScheduling(timestamp, carsPresent, emergencyVehicle);
+    } catch (error) {
+      console.log('[ML] Prediction failed, using rule-based selection');
+    }
+    
+    // Use ML prediction when safe, fall back to rule-based for safety
+    let currentScheduling = optimalScheduling; // Start with rule-based
+    
+    // Allow ML to influence decisions if it doesn't violate safety rules
+    if (mlPrediction !== 'Round Robin' || emergencyVehicle === 0) {
+      // ML can suggest Priority Scheduling or Shortest Job First safely
+      if (mlPrediction === 'Priority Scheduling' && emergencyVehicle > 0) {
+        currentScheduling = mlPrediction;
+      } else if (mlPrediction === 'Shortest Job First' && carsPresent > 15) {
+        currentScheduling = mlPrediction;
+      } else if (mlPrediction === 'Round Robin' && emergencyVehicle === 0 && carsPresent < 20) {
+        currentScheduling = mlPrediction;
+      }
+    }
+    
     lastPrediction = currentScheduling;
     
     // Log to CSV
@@ -223,18 +286,18 @@ app.post('/api/log-traffic', async (req, res) => {
       accidentRisks.forEach(a => console.log(`[ACCIDENT RISK] ${a.risk}: ${a.message} - ${a.action}`));
     }
     
-    // Get prediction for 10 seconds ahead
-    const futureTimestamp = new Date(Date.now() + 10000).toISOString();
-    const futureScheduling = await getPredictedScheduling(futureTimestamp, carsPresent, emergencyVehicle);
+    // Get prediction for 10 seconds ahead using optimal selection
+    const futureScheduling = selectOptimalScheduling(carsPresent + Math.floor(Math.random() * 3) - 1, emergencyVehicle, recentViolations);
     
-    console.log(`[TRAFFIC LOG] Cars: ${carsPresent}, Emergency: ${emergencyVehicle}, Current: ${currentScheduling}, Next (10s): ${futureScheduling}`);
+    console.log(`[TRAFFIC LOG] Cars: ${carsPresent}, Emergency: ${emergencyVehicle}, Rule-based: ${currentScheduling}, ML: ${mlPrediction}, Next: ${futureScheduling}`);
     
     res.json({
       success: true,
       currentScheduling,
       futureScheduling,
       violations,
-      accidentRisks
+      accidentRisks,
+      mlPrediction
     });
   } catch (error) {
     console.error('[ERROR] Failed to log traffic data:', error);

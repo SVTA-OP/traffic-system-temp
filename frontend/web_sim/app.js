@@ -161,12 +161,15 @@ class TrafficSimulation {
             angle: angle,
             stopped: false,
             isEmergency: false,
-            id: Math.random().toString(36).substr(2, 9)
+            id: Math.random().toString(36).substr(2, 9),
+            lastPosition: { x: startX, y: startY },
+            collisionRadius: 15
         };
 
         this.vehicles.push(vehicle);
         this.stats.totalVehicles++;
         this.updateStats();
+        this.addLog(`🚗 Vehicle spawned from ${vehicle.directionName}`);
     }
 
     spawnEmergencyVehicle(direction = null) {
@@ -409,7 +412,10 @@ class TrafficSimulation {
             const vehicleAhead = this.findVehicleAhead(vehicle);
             const shouldStopForVehicle = vehicleAhead && this.getDistanceToVehicle(vehicle, vehicleAhead) < this.minGapMove;
             
-            const shouldStop = shouldStopForLight || shouldStopForVehicle;
+            // Collision detection
+            const hasCollisionRisk = this.checkCollisionRisk(vehicle);
+            
+            const shouldStop = shouldStopForLight || shouldStopForVehicle || hasCollisionRisk;
             vehicle.stopped = shouldStop;
 
             if (!shouldStop) {
@@ -417,6 +423,9 @@ class TrafficSimulation {
                 if (vehicle.currentSpeed < vehicle.maxSpeed) {
                     vehicle.currentSpeed = Math.min(vehicle.maxSpeed, vehicle.currentSpeed + 0.05);
                 }
+                
+                // Store last position for collision detection
+                vehicle.lastPosition = { x: vehicle.x, y: vehicle.y };
                 
                 // Move vehicle
                 const dx = vehicle.targetX - vehicle.x;
@@ -434,6 +443,11 @@ class TrafficSimulation {
             } else {
                 // Smooth deceleration when stopping
                 vehicle.currentSpeed = Math.max(0, vehicle.currentSpeed - this.maxDeceleration);
+                
+                // Handle collision risk specifically
+                if (hasCollisionRisk) {
+                    this.handleCollisionRisk(vehicle);
+                }
             }
         }
 
@@ -899,6 +913,38 @@ class TrafficSimulation {
         
         // Return safe distance or indicate no spawn
         return minDistance < this.minGapSpawn ? -1 : 0;
+    }
+    
+    // Collision detection and handling
+    checkCollisionRisk(vehicle) {
+        for (let other of this.vehicles) {
+            if (other.id === vehicle.id) continue;
+            
+            const distance = Math.sqrt(
+                Math.pow(vehicle.x - other.x, 2) + 
+                Math.pow(vehicle.y - other.y, 2)
+            );
+            
+            // Check if vehicles are too close
+            if (distance < (vehicle.collisionRadius || 15) + (other.collisionRadius || 15)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    handleCollisionRisk(vehicle) {
+        // Log collision risk
+        this.addLog(`⚠️ COLLISION RISK: ${vehicle.directionName} vehicle`, 'warning');
+        
+        // Force emergency stop
+        vehicle.currentSpeed = 0;
+        vehicle.stopped = true;
+        
+        // If it's an emergency vehicle, log critical warning
+        if (vehicle.isEmergency) {
+            this.addLog(`🚨 CRITICAL: Emergency vehicle collision risk!`, 'error');
+        }
     }
 
     // ML Integration Methods

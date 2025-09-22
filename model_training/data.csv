@@ -1,1 +1,21 @@
 timestamp,cars_present,emergency_vehicle,scheduling_model
+2025-09-22T14:43:56.644Z,1,0,Round Robin
+2025-09-22T14:43:58.627Z,2,0,Round Robin
+2025-09-22T14:44:01.627Z,3,0,Round Robin
+2025-09-22T14:44:04.644Z,4,0,Round Robin
+2025-09-22T14:44:07.632Z,5,0,Round Robin
+2025-09-22T14:44:10.630Z,8,1,Priority Scheduling
+2025-09-22T14:44:13.632Z,8,1,Priority Scheduling
+2025-09-22T14:44:16.641Z,8,0,Shortest Job First
+2025-09-22T14:44:19.674Z,9,0,Round Robin
+2025-09-22T14:44:22.631Z,11,0,Round Robin
+2025-09-22T14:44:25.634Z,7,1,Priority Scheduling
+2025-09-22T14:44:28.647Z,9,1,Priority Scheduling
+2025-09-22T14:44:31.633Z,8,0,Round Robin
+2025-09-22T14:44:34.638Z,10,0,Round Robin
+2025-09-22T14:44:37.632Z,11,0,Round Robin
+2025-09-22T14:44:40.646Z,10,1,Priority Scheduling
+2025-09-22T14:44:43.636Z,15,0,Round Robin
+2025-09-22T14:44:46.633Z,24,0,Shortest Job First
+2025-09-22T14:44:49.673Z,24,0,Shortest Job First
+2025-09-22T14:44:52.647Z,18,2,Priority Scheduling

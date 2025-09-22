@@ -4,15 +4,19 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 import pickle
+import time
 
 # Load CSV data
+import os
+data_path = os.path.join(os.path.dirname(__file__), 'data.csv')
 try:
-    df = pd.read_csv('data.csv')
+    df = pd.read_csv(data_path)
     if len(df) < 5:
         print("Not enough data for training")
         exit(1)
+    print(f"Loaded {len(df)} rows of training data")
 except FileNotFoundError:
-    print("Data file not found")
+    print(f"Data file not found at {data_path}")
     exit(1)
 
 # Preprocessing and training function
@@ -44,8 +48,16 @@ def preprocess_and_train(df):
         target_names=le.classes_, zero_division=0))
     
     trained_objects = {'model': model, 'scaler': scaler, 'label_encoder': le}
-    with open('traffic_scheduler_model.pkl', 'wb') as f:
+    model_path = os.path.join(os.path.dirname(__file__), 'traffic_scheduler_model.pkl')
+    temp_path = model_path + '.tmp'
+    
+    # Write to temp file first, then atomic rename
+    with open(temp_path, 'wb') as f:
         pickle.dump(trained_objects, f)
+    
+    # Atomic rename to prevent read/write conflicts
+    os.rename(temp_path, model_path)
+    print(f"Model saved to {model_path}")
     
     return trained_objects
 
@@ -54,8 +66,18 @@ if __name__ == '__main__':
 
 # Function to predict scheduling model
 def predict_scheduling(timestamp, cars_present, emergency_vehicle):
-    with open('traffic_scheduler_model.pkl', 'rb') as f:
-        objs = pickle.load(f)
+    model_path = os.path.join(os.path.dirname(__file__), 'traffic_scheduler_model.pkl')
+    
+    # Retry logic for file reading
+    for attempt in range(3):
+        try:
+            with open(model_path, 'rb') as f:
+                objs = pickle.load(f)
+            break
+        except (FileNotFoundError, EOFError, pickle.UnpicklingError) as e:
+            if attempt == 2:
+                raise e
+            time.sleep(0.1)  # Brief delay before retry
     
     df = pd.DataFrame({
         'timestamp': [timestamp],
