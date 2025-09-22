@@ -5,8 +5,15 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 import pickle
 
-# Load your CSV data (replace 'your_traffic_data.csv' with the actual file path)
-df = pd.read_csv('data.csv')
+# Load CSV data
+try:
+    df = pd.read_csv('data.csv')
+    if len(df) < 5:
+        print("Not enough data for training")
+        exit(1)
+except FileNotFoundError:
+    print("Data file not found")
+    exit(1)
 
 # Preprocessing and training function
 def preprocess_and_train(df):
@@ -42,7 +49,8 @@ def preprocess_and_train(df):
     
     return trained_objects
 
-trained_objs = preprocess_and_train(df)
+if __name__ == '__main__':
+    trained_objs = preprocess_and_train(df)
 
 # Function to predict scheduling model
 def predict_scheduling(timestamp, cars_present, emergency_vehicle):
@@ -65,5 +73,9 @@ def predict_scheduling(timestamp, cars_present, emergency_vehicle):
     
     return pred_sched[0]
 
-# Example usage (replace with actual values)
-print(predict_scheduling('2025-09-21T19:08:55', 23, 0))
+# Example usage when run directly
+if __name__ == '__main__':
+    try:
+        print(predict_scheduling('2025-09-21T19:08:55', 23, 0))
+    except Exception as e:
+        print(f"Error: {e}")

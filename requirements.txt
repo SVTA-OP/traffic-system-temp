@@ -50,3 +50,14 @@ opencv-python
 pandas
 pygame
 scikit-learn
+flask
+matplotlib
+numpy
+opencv-python
+pandas
+pillow
+pygame
+pytest
+requests
+scikit-learn
+scipy

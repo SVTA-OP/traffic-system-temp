@@ -59,6 +59,10 @@ class TrafficSimulation {
 
         this.initializeEventListeners();
         this.addLog('🚦 Smart Traffic Management System Ready!');
+        
+        // ML Integration variables
+        this.logInterval = null;
+        this.lastLogTime = 0;
     }
 
     initializeEventListeners() {
@@ -781,6 +785,7 @@ class TrafficSimulation {
         document.getElementById('stopBtn').disabled = false;
 
         this.addLog('🚀 Starting smart traffic simulation...', 'success');
+        this.startDataLogging();
         this.lastTime = performance.now();
         this.gameLoop(this.lastTime);
     }
@@ -797,6 +802,7 @@ class TrafficSimulation {
             this.animationId = null;
         }
 
+        this.stopDataLogging();
         this.addLog('⏹️ Traffic simulation stopped', 'info');
     }
 
@@ -893,6 +899,100 @@ class TrafficSimulation {
         
         // Return safe distance or indicate no spawn
         return minDistance < this.minGapSpawn ? -1 : 0;
+    }
+
+    // ML Integration Methods
+    startDataLogging() {
+        this.addLog('📊 Starting ML data logging...', 'success');
+        
+        // Log data every 3 seconds
+        this.logInterval = setInterval(() => {
+            this.logTrafficData();
+        }, 3000);
+        
+        // Log initial data immediately
+        setTimeout(() => this.logTrafficData(), 1000);
+    }
+    
+    stopDataLogging() {
+        if (this.logInterval) {
+            clearInterval(this.logInterval);
+            this.logInterval = null;
+            this.addLog('📊 ML data logging stopped', 'info');
+        }
+    }
+    
+    async logTrafficData() {
+        try {
+            const carsPresent = this.vehicles.length;
+            const emergencyVehicle = this.vehicles.filter(v => v.isEmergency).length;
+            
+            const response = await fetch('/api/log-traffic', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    carsPresent,
+                    emergencyVehicle
+                })
+            });
+            
+            if (response.ok) {
+                const result = await response.json();
+                
+                // Log the ML prediction
+                this.addLog(`🤖 ML: ${result.currentScheduling} | Next: ${result.futureScheduling}`);
+                
+                // Log rule violations
+                if (result.violations && result.violations.length > 0) {
+                    result.violations.forEach(violation => {
+                        this.addLog(`⚠️ ${violation.severity}: ${violation.message}`, 'warning');
+                    });
+                }
+                
+                // Log accident risks
+                if (result.accidentRisks && result.accidentRisks.length > 0) {
+                    result.accidentRisks.forEach(risk => {
+                        this.addLog(`🚨 ${risk.risk}: ${risk.message}`, 'error');
+                    });
+                }
+                
+                // Update display with current scheduling
+                this.updateSchedulingDisplay(result.currentScheduling);
+                
+            } else {
+                console.error('Failed to log traffic data:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error logging traffic data:', error);
+        }
+    }
+    
+    updateSchedulingDisplay(scheduling) {
+        // Add scheduling info to the UI
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            let schedulingCard = document.getElementById('schedulingCard');
+            if (!schedulingCard) {
+                schedulingCard = document.createElement('div');
+                schedulingCard.id = 'schedulingCard';
+                schedulingCard.className = 'stat-card scheduling';
+                schedulingCard.innerHTML = `
+                    <div class="stat-icon">🤖</div>
+                    <div class="stat-content">
+                        <h3>Algorithm</h3>
+                        <span id="currentScheduling" class="stat-number">Round Robin</span>
+                    </div>
+                `;
+                statsSection.querySelector('.stats-grid').appendChild(schedulingCard);
+            }
+            
+            const schedulingElement = document.getElementById('currentScheduling');
+            if (schedulingElement) {
+                schedulingElement.textContent = scheduling;
+            }
+        }
     }
 }
 
