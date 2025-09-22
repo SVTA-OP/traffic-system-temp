@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚦 Smart Traffic Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="header-content">
+                <h1>🚦 Smart Traffic Management System</h1>
+                <p>AI-Powered Dynamic Traffic Control & Real-Time Monitoring</p>
+                <div class="header-badges">
+                    <span class="badge badge-ai">🤖 AI Enabled</span>
+                    <span class="badge badge-realtime">⚡ Real-Time</span>
+                    <span class="badge badge-smart">🧠 Smart Control</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-dashboard">
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <h2>🎮 Simulation Controls</h2>
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-start">
+                        <span class="btn-icon">▶️</span>
+                        Start Simulation
+                    </button>
+                    <button id="stopBtn" class="btn btn-stop" disabled>
+                        <span class="btn-icon">⏹️</span>
+                        Stop Simulation
+                    </button>
+                    <button id="resetBtn" class="btn btn-reset">
+                        <span class="btn-icon">🔄</span>
+                        Reset System
+                    </button>
+                </div>
+                
+                <div class="manual-controls">
+                    <h3>⌨️ Manual Controls</h3>
+                    <div class="control-grid">
+                        <div class="control-item">
+                            <kbd>1-4</kbd>
+                            <span>🚗 Spawn Vehicles (N/E/S/W)</span>
+                        </div>
+                        <div class="control-item">
+                            <kbd>5-8</kbd>
+                            <span>🚨 Ambulances (N/E/S/W)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="stats-section">
+                <h2>📊 Live Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card vehicles">
+                        <div class="stat-icon">🚗</div>
+                        <div class="stat-content">
+                            <h3>Total Vehicles</h3>
+                            <span id="totalVehicles" class="stat-number">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card waiting">
+                        <div class="stat-icon">⏳</div>
+                        <div class="stat-content">
+                            <h3>Currently Waiting</h3>
+                            <span id="avgWaitTime" class="stat-number">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card emergency">
+                        <div class="stat-icon">🚨</div>
+                        <div class="stat-content">
+                            <h3>Emergency Calls</h3>
+                            <span id="congestedAreas" class="stat-number">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Simulation Canvas -->
+            <div class="simulation-container">
+                <div class="simulation-header">
+                    <h2>🛣️ Live 4-Way Intersection</h2>
+                    <div class="simulation-features">
+                        <span class="feature-tag">🎯 Dynamic Timing</span>
+                        <span class="feature-tag">🚨 Emergency Priority</span>
+                        <span class="feature-tag">🔄 Auto-Optimization</span>
+                    </div>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="trafficCanvas"></canvas>
+                </div>
+                <div class="canvas-instructions">
+                    <p>🎮 <strong>Interactive Controls:</strong> Press 1-4 to spawn cars, 5-8 for ambulances (N/E/S/W)</p>
+                </div>
+            </div>
+
+            <!-- Traffic Data Panel -->
+            <div class="data-panel">
+                <h2>🚦 Traffic Intelligence</h2>
+                <div id="intersections" class="intersections-container">
+                    <!-- Dynamic traffic data will be populated here -->
+                </div>
+            </div>
+
+            <!-- System Logs -->
+            <div class="logs-section">
+                <div class="logs-header">
+                    <h3>📝 System Activity</h3>
+                    <span class="logs-badge live-badge">🟢 Live</span>
+                </div>
+                <div id="logContainer" class="log-container">
+                    <!-- Logs will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <p>🏆 <strong>Smart India Hackathon 2025</strong> | AI-Powered Traffic Management Solution</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

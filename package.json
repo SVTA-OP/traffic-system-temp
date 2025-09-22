@@ -1,0 +1,21 @@
+{
+  "name": "smart-traffic-management-simulation",
+  "version": "1.0.0",
+  "description": "Smart Traffic Management Simulation for Smart India Hackathon",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "traffic",
+    "simulation",
+    "smart-city",
+    "hackathon"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

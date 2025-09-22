@@ -1,0 +1,1001 @@
+timestamp,cars_present,emergency_vehicle,scheduling_model
+2025-09-21T19:08:05,25,1,Priority Scheduling
+2025-09-21T19:08:10,20,0,Round Robin
+2025-09-21T19:08:15,28,0,Shortest Job First
+2025-09-21T19:08:20,22,0,Round Robin
+2025-09-21T19:08:25,35,1,Priority Scheduling
+2025-09-21T19:08:30,30,0,Shortest Job First
+2025-09-21T19:08:35,15,0,Round Robin
+2025-09-21T19:08:40,18,1,Priority Scheduling
+2025-09-21T19:08:45,20,0,Round Robin
+2025-09-21T19:08:50,40,0,Shortest Job First
+2025-09-21T19:08:55,22,0,Round Robin
+2025-09-21T19:09:00,32,0,Round Robin
+2025-09-21T19:09:05,23,1,Priority Scheduling
+2025-09-21T19:09:10,27,0,Round Robin
+2025-09-21T19:09:15,34,0,Round Robin
+2025-09-21T19:09:20,20,1,Priority Scheduling
+2025-09-21T19:09:25,17,0,Round Robin
+2025-09-21T19:09:30,28,0,Round Robin
+2025-09-21T19:09:35,33,0,Round Robin
+2025-09-21T19:09:40,28,0,Shortest Job First
+2025-09-21T19:09:45,25,0,Shortest Job First
+2025-09-21T19:09:50,33,1,Priority Scheduling
+2025-09-21T19:09:55,37,0,Shortest Job First
+2025-09-21T19:10:00,20,1,Priority Scheduling
+2025-09-21T19:10:05,25,1,Priority Scheduling
+2025-09-21T19:10:10,29,0,Shortest Job First
+2025-09-21T19:10:15,30,0,Shortest Job First
+2025-09-21T19:10:20,39,0,Round Robin
+2025-09-21T19:10:25,36,1,Priority Scheduling
+2025-09-21T19:10:30,32,1,Priority Scheduling
+2025-09-21T19:10:35,21,1,Priority Scheduling
+2025-09-21T19:10:40,29,0,Round Robin
+2025-09-21T19:10:45,28,1,Priority Scheduling
+2025-09-21T19:10:50,38,0,Shortest Job First
+2025-09-21T19:10:55,15,1,Priority Scheduling
+2025-09-21T19:11:00,18,0,Round Robin
+2025-09-21T19:11:05,35,0,Shortest Job First
+2025-09-21T19:11:10,32,0,Shortest Job First
+2025-09-21T19:11:15,24,1,Priority Scheduling
+2025-09-21T19:11:20,16,1,Priority Scheduling
+2025-09-21T19:11:25,40,0,Shortest Job First
+2025-09-21T19:11:30,33,1,Priority Scheduling
+2025-09-21T19:11:35,21,1,Priority Scheduling
+2025-09-21T19:11:40,23,0,Round Robin
+2025-09-21T19:11:45,24,0,Round Robin
+2025-09-21T19:11:50,23,0,Round Robin
+2025-09-21T19:11:55,38,0,Shortest Job First
+2025-09-21T19:12:00,23,0,Round Robin
+2025-09-21T19:12:05,24,0,Round Robin
+2025-09-21T19:12:10,32,0,Shortest Job First
+2025-09-21T19:12:15,27,0,Shortest Job First
+2025-09-21T19:12:20,33,0,Round Robin
+2025-09-21T19:12:25,16,1,Priority Scheduling
+2025-09-21T19:12:30,15,0,Round Robin
+2025-09-21T19:12:35,36,1,Priority Scheduling
+2025-09-21T19:12:40,24,0,Shortest Job First
+2025-09-21T19:12:45,39,0,Shortest Job First
+2025-09-21T19:12:50,38,0,Round Robin
+2025-09-21T19:12:55,30,0,Round Robin
+2025-09-21T19:13:00,28,0,Round Robin
+2025-09-21T19:13:05,35,1,Priority Scheduling
+2025-09-21T19:13:10,26,1,Priority Scheduling
+2025-09-21T19:13:15,24,0,Shortest Job First
+2025-09-21T19:13:20,18,0,Shortest Job First
+2025-09-21T19:13:25,25,1,Priority Scheduling
+2025-09-21T19:13:30,39,0,Round Robin
+2025-09-21T19:13:35,39,0,Round Robin
+2025-09-21T19:13:40,17,0,Shortest Job First
+2025-09-21T19:13:45,17,0,Round Robin
+2025-09-21T19:13:50,32,1,Priority Scheduling
+2025-09-21T19:13:55,30,0,Shortest Job First
+2025-09-21T19:14:00,22,0,Shortest Job First
+2025-09-21T19:14:05,36,1,Priority Scheduling
+2025-09-21T19:14:10,20,0,Shortest Job First
+2025-09-21T19:14:15,39,0,Shortest Job First
+2025-09-21T19:14:20,15,0,Shortest Job First
+2025-09-21T19:14:25,36,0,Shortest Job First
+2025-09-21T19:14:30,34,0,Round Robin
+2025-09-21T19:14:35,35,1,Priority Scheduling
+2025-09-21T19:14:40,35,0,Round Robin
+2025-09-21T19:14:45,18,1,Priority Scheduling
+2025-09-21T19:14:50,28,1,Priority Scheduling
+2025-09-21T19:14:55,16,0,Round Robin
+2025-09-21T19:15:00,18,0,Shortest Job First
+2025-09-21T19:15:05,15,1,Priority Scheduling
+2025-09-21T19:15:10,24,0,Round Robin
+2025-09-21T19:15:15,21,0,Shortest Job First
+2025-09-21T19:15:20,25,1,Priority Scheduling
+2025-09-21T19:15:25,18,0,Round Robin
+2025-09-21T19:15:30,19,0,Shortest Job First
+2025-09-21T19:15:35,20,1,Priority Scheduling
+2025-09-21T19:15:40,25,0,Round Robin
+2025-09-21T19:15:45,26,0,Round Robin
+2025-09-21T19:15:50,21,1,Priority Scheduling
+2025-09-21T19:15:55,34,0,Shortest Job First
+2025-09-21T19:16:00,22,0,Round Robin
+2025-09-21T19:16:05,23,0,Round Robin
+2025-09-21T19:16:10,31,0,Shortest Job First
+2025-09-21T19:16:15,20,0,Shortest Job First
+2025-09-21T19:16:20,23,1,Priority Scheduling
+2025-09-21T19:16:25,36,0,Round Robin
+2025-09-21T19:16:30,30,1,Priority Scheduling
+2025-09-21T19:16:35,15,0,Shortest Job First
+2025-09-21T19:16:40,25,1,Priority Scheduling
+2025-09-21T19:16:45,23,0,Shortest Job First
+2025-09-21T19:16:50,21,1,Priority Scheduling
+2025-09-21T19:16:55,35,0,Round Robin
+2025-09-21T19:17:00,31,0,Round Robin
+2025-09-21T19:17:05,27,0,Shortest Job First
+2025-09-21T19:17:10,22,1,Priority Scheduling
+2025-09-21T19:17:15,40,0,Round Robin
+2025-09-21T19:17:20,24,0,Round Robin
+2025-09-21T19:17:25,26,0,Round Robin
+2025-09-21T19:17:30,27,1,Priority Scheduling
+2025-09-21T19:17:35,24,0,Round Robin
+2025-09-21T19:17:40,28,1,Priority Scheduling
+2025-09-21T19:17:45,35,0,Shortest Job First
+2025-09-21T19:17:50,34,0,Round Robin
+2025-09-21T19:17:55,25,1,Priority Scheduling
+2025-09-21T19:18:00,24,0,Shortest Job First
+2025-09-21T19:18:05,22,0,Shortest Job First
+2025-09-21T19:18:10,32,1,Priority Scheduling
+2025-09-21T19:18:15,27,1,Priority Scheduling
+2025-09-21T19:18:20,35,0,Round Robin
+2025-09-21T19:18:25,16,0,Round Robin
+2025-09-21T19:18:30,31,0,Round Robin
+2025-09-21T19:18:35,19,0,Round Robin
+2025-09-21T19:18:40,32,0,Shortest Job First
+2025-09-21T19:18:45,18,0,Round Robin
+2025-09-21T19:18:50,28,0,Shortest Job First
+2025-09-21T19:18:55,22,0,Shortest Job First
+2025-09-21T19:19:00,25,0,Shortest Job First
+2025-09-21T19:19:05,34,1,Priority Scheduling
+2025-09-21T19:19:10,37,1,Priority Scheduling
+2025-09-21T19:19:15,33,1,Priority Scheduling
+2025-09-21T19:19:20,23,1,Priority Scheduling
+2025-09-21T19:19:25,21,0,Shortest Job First
+2025-09-21T19:19:30,35,1,Priority Scheduling
+2025-09-21T19:19:35,36,0,Shortest Job First
+2025-09-21T19:19:40,34,1,Priority Scheduling
+2025-09-21T19:19:45,19,0,Round Robin
+2025-09-21T19:19:50,21,0,Round Robin
+2025-09-21T19:19:55,30,0,Shortest Job First
+2025-09-21T19:20:00,22,0,Round Robin
+2025-09-21T19:20:05,26,0,Round Robin
+2025-09-21T19:20:10,29,0,Shortest Job First
+2025-09-21T19:20:15,34,0,Shortest Job First
+2025-09-21T19:20:20,20,0,Round Robin
+2025-09-21T19:20:25,25,0,Shortest Job First
+2025-09-21T19:20:30,20,0,Round Robin
+2025-09-21T19:20:35,29,0,Round Robin
+2025-09-21T19:20:40,22,0,Round Robin
+2025-09-21T19:20:45,34,0,Shortest Job First
+2025-09-21T19:20:50,27,0,Shortest Job First
+2025-09-21T19:20:55,29,0,Round Robin
+2025-09-21T19:21:00,20,0,Shortest Job First
+2025-09-21T19:21:05,23,0,Round Robin
+2025-09-21T19:21:10,26,0,Shortest Job First
+2025-09-21T19:21:15,22,0,Shortest Job First
+2025-09-21T19:21:20,21,0,Shortest Job First
+2025-09-21T19:21:25,16,1,Priority Scheduling
+2025-09-21T19:21:30,33,0,Round Robin
+2025-09-21T19:21:35,37,0,Round Robin
+2025-09-21T19:21:40,27,0,Shortest Job First
+2025-09-21T19:21:45,20,0,Shortest Job First
+2025-09-21T19:21:50,25,0,Round Robin
+2025-09-21T19:21:55,39,0,Round Robin
+2025-09-21T19:22:00,16,1,Priority Scheduling
+2025-09-21T19:22:05,28,0,Round Robin
+2025-09-21T19:22:10,31,1,Priority Scheduling
+2025-09-21T19:22:15,39,0,Shortest Job First
+2025-09-21T19:22:20,27,0,Shortest Job First
+2025-09-21T19:22:25,35,1,Priority Scheduling
+2025-09-21T19:22:30,19,0,Round Robin
+2025-09-21T19:22:35,15,0,Shortest Job First
+2025-09-21T19:22:40,20,0,Shortest Job First
+2025-09-21T19:22:45,27,0,Shortest Job First
+2025-09-21T19:22:50,36,1,Priority Scheduling
+2025-09-21T19:22:55,17,0,Round Robin
+2025-09-21T19:23:00,20,0,Round Robin
+2025-09-21T19:23:05,21,1,Priority Scheduling
+2025-09-21T19:23:10,23,0,Round Robin
+2025-09-21T19:23:15,38,1,Priority Scheduling
+2025-09-21T19:23:20,31,0,Round Robin
+2025-09-21T19:23:25,33,0,Shortest Job First
+2025-09-21T19:23:30,19,0,Shortest Job First
+2025-09-21T19:23:35,28,1,Priority Scheduling
+2025-09-21T19:23:40,35,0,Shortest Job First
+2025-09-21T19:23:45,25,1,Priority Scheduling
+2025-09-21T19:23:50,34,0,Round Robin
+2025-09-21T19:23:55,25,0,Round Robin
+2025-09-21T19:24:00,28,1,Priority Scheduling
+2025-09-21T19:24:05,31,0,Round Robin
+2025-09-21T19:24:10,30,0,Round Robin
+2025-09-21T19:24:15,35,1,Priority Scheduling
+2025-09-21T19:24:20,31,0,Round Robin
+2025-09-21T19:24:25,40,1,Priority Scheduling
+2025-09-21T19:24:30,26,1,Priority Scheduling
+2025-09-21T19:24:35,33,0,Shortest Job First
+2025-09-21T19:24:40,24,0,Shortest Job First
+2025-09-21T19:24:45,24,0,Shortest Job First
+2025-09-21T19:24:50,17,0,Shortest Job First
+2025-09-21T19:24:55,23,0,Round Robin
+2025-09-21T19:25:00,31,1,Priority Scheduling
+2025-09-21T19:25:05,24,1,Priority Scheduling
+2025-09-21T19:25:10,39,0,Round Robin
+2025-09-21T19:25:15,31,0,Round Robin
+2025-09-21T19:25:20,36,1,Priority Scheduling
+2025-09-21T19:25:25,31,0,Round Robin
+2025-09-21T19:25:30,40,0,Shortest Job First
+2025-09-21T19:25:35,19,1,Priority Scheduling
+2025-09-21T19:25:40,21,0,Shortest Job First
+2025-09-21T19:25:45,32,1,Priority Scheduling
+2025-09-21T19:25:50,39,0,Round Robin
+2025-09-21T19:25:55,23,1,Priority Scheduling
+2025-09-21T19:26:00,19,0,Shortest Job First
+2025-09-21T19:26:05,27,0,Round Robin
+2025-09-21T19:26:10,33,0,Shortest Job First
+2025-09-21T19:26:15,15,0,Round Robin
+2025-09-21T19:26:20,20,0,Shortest Job First
+2025-09-21T19:26:25,28,0,Shortest Job First
+2025-09-21T19:26:30,40,1,Priority Scheduling
+2025-09-21T19:26:35,16,0,Shortest Job First
+2025-09-21T19:26:40,28,1,Priority Scheduling
+2025-09-21T19:26:45,18,0,Shortest Job First
+2025-09-21T19:26:50,19,0,Round Robin
+2025-09-21T19:26:55,21,0,Round Robin
+2025-09-21T19:27:00,34,0,Round Robin
+2025-09-21T19:27:05,39,0,Round Robin
+2025-09-21T19:27:10,36,0,Shortest Job First
+2025-09-21T19:27:15,30,0,Shortest Job First
+2025-09-21T19:27:20,34,0,Round Robin
+2025-09-21T19:27:25,35,0,Shortest Job First
+2025-09-21T19:27:30,28,0,Round Robin
+2025-09-21T19:27:35,37,1,Priority Scheduling
+2025-09-21T19:27:40,28,1,Priority Scheduling
+2025-09-21T19:27:45,23,1,Priority Scheduling
+2025-09-21T19:27:50,16,1,Priority Scheduling
+2025-09-21T19:27:55,24,0,Round Robin
+2025-09-21T19:28:00,31,1,Priority Scheduling
+2025-09-21T19:28:05,31,1,Priority Scheduling
+2025-09-21T19:28:10,36,1,Priority Scheduling
+2025-09-21T19:28:15,22,0,Shortest Job First
+2025-09-21T19:28:20,36,1,Priority Scheduling
+2025-09-21T19:28:25,22,1,Priority Scheduling
+2025-09-21T19:28:30,19,1,Priority Scheduling
+2025-09-21T19:28:35,36,0,Round Robin
+2025-09-21T19:28:40,28,0,Shortest Job First
+2025-09-21T19:28:45,31,0,Round Robin
+2025-09-21T19:28:50,31,0,Shortest Job First
+2025-09-21T19:28:55,18,0,Round Robin
+2025-09-21T19:29:00,22,1,Priority Scheduling
+2025-09-21T19:29:05,33,0,Round Robin
+2025-09-21T19:29:10,38,0,Round Robin
+2025-09-21T19:29:15,32,0,Shortest Job First
+2025-09-21T19:29:20,17,1,Priority Scheduling
+2025-09-21T19:29:25,16,0,Shortest Job First
+2025-09-21T19:29:30,37,1,Priority Scheduling
+2025-09-21T19:29:35,34,0,Shortest Job First
+2025-09-21T19:29:40,20,0,Round Robin
+2025-09-21T19:29:45,27,0,Round Robin
+2025-09-21T19:29:50,20,0,Round Robin
+2025-09-21T19:29:55,24,0,Shortest Job First
+2025-09-21T19:30:00,30,0,Round Robin
+2025-09-21T19:30:05,27,0,Shortest Job First
+2025-09-21T19:30:10,38,1,Priority Scheduling
+2025-09-21T19:30:15,21,1,Priority Scheduling
+2025-09-21T19:30:20,37,0,Shortest Job First
+2025-09-21T19:30:25,25,0,Shortest Job First
+2025-09-21T19:30:30,17,0,Round Robin
+2025-09-21T19:30:35,17,1,Priority Scheduling
+2025-09-21T19:30:40,39,0,Round Robin
+2025-09-21T19:30:45,36,0,Round Robin
+2025-09-21T19:30:50,30,1,Priority Scheduling
+2025-09-21T19:30:55,35,1,Priority Scheduling
+2025-09-21T19:31:00,29,0,Round Robin
+2025-09-21T19:31:05,28,0,Round Robin
+2025-09-21T19:31:10,19,0,Round Robin
+2025-09-21T19:31:15,16,0,Shortest Job First
+2025-09-21T19:31:20,21,0,Shortest Job First
+2025-09-21T19:31:25,25,0,Round Robin
+2025-09-21T19:31:30,27,0,Round Robin
+2025-09-21T19:31:35,16,0,Round Robin
+2025-09-21T19:31:40,36,0,Shortest Job First
+2025-09-21T19:31:45,40,0,Shortest Job First
+2025-09-21T19:31:50,28,1,Priority Scheduling
+2025-09-21T19:31:55,20,0,Round Robin
+2025-09-21T19:32:00,38,0,Round Robin
+2025-09-21T19:32:05,26,1,Priority Scheduling
+2025-09-21T19:32:10,33,0,Round Robin
+2025-09-21T19:32:15,24,1,Priority Scheduling
+2025-09-21T19:32:20,35,1,Priority Scheduling
+2025-09-21T19:32:25,37,0,Shortest Job First
+2025-09-21T19:32:30,15,1,Priority Scheduling
+2025-09-21T19:32:35,32,0,Round Robin
+2025-09-21T19:32:40,40,1,Priority Scheduling
+2025-09-21T19:32:45,22,1,Priority Scheduling
+2025-09-21T19:32:50,38,0,Round Robin
+2025-09-21T19:32:55,27,1,Priority Scheduling
+2025-09-21T19:33:00,36,0,Shortest Job First
+2025-09-21T19:33:05,20,0,Round Robin
+2025-09-21T19:33:10,32,0,Round Robin
+2025-09-21T19:33:15,26,0,Shortest Job First
+2025-09-21T19:33:20,29,0,Shortest Job First
+2025-09-21T19:33:25,22,0,Shortest Job First
+2025-09-21T19:33:30,31,0,Round Robin
+2025-09-21T19:33:35,28,0,Round Robin
+2025-09-21T19:33:40,19,0,Shortest Job First
+2025-09-21T19:33:45,18,0,Round Robin
+2025-09-21T19:33:50,30,0,Round Robin
+2025-09-21T19:33:55,24,0,Round Robin
+2025-09-21T19:34:00,18,0,Shortest Job First
+2025-09-21T19:34:05,15,1,Priority Scheduling
+2025-09-21T19:34:10,36,1,Priority Scheduling
+2025-09-21T19:34:15,16,1,Priority Scheduling
+2025-09-21T19:34:20,38,0,Round Robin
+2025-09-21T19:34:25,27,0,Round Robin
+2025-09-21T19:34:30,31,0,Round Robin
+2025-09-21T19:34:35,39,0,Shortest Job First
+2025-09-21T19:34:40,25,0,Round Robin
+2025-09-21T19:34:45,31,0,Shortest Job First
+2025-09-21T19:34:50,32,1,Priority Scheduling
+2025-09-21T19:34:55,27,0,Shortest Job First
+2025-09-21T19:35:00,33,0,Round Robin
+2025-09-21T19:35:05,15,1,Priority Scheduling
+2025-09-21T19:35:10,35,0,Round Robin
+2025-09-21T19:35:15,18,0,Round Robin
+2025-09-21T19:35:20,30,1,Priority Scheduling
+2025-09-21T19:35:25,26,0,Round Robin
+2025-09-21T19:35:30,38,1,Priority Scheduling
+2025-09-21T19:35:35,36,0,Round Robin
+2025-09-21T19:35:40,24,0,Round Robin
+2025-09-21T19:35:45,17,1,Priority Scheduling
+2025-09-21T19:35:50,18,1,Priority Scheduling
+2025-09-21T19:35:55,19,0,Shortest Job First
+2025-09-21T19:36:00,29,0,Shortest Job First
+2025-09-21T19:36:05,19,0,Round Robin
+2025-09-21T19:36:10,33,0,Round Robin
+2025-09-21T19:36:15,21,1,Priority Scheduling
+2025-09-21T19:36:20,29,0,Round Robin
+2025-09-21T19:36:25,33,0,Round Robin
+2025-09-21T19:36:30,21,1,Priority Scheduling
+2025-09-21T19:36:35,28,0,Round Robin
+2025-09-21T19:36:40,27,0,Shortest Job First
+2025-09-21T19:36:45,37,0,Round Robin
+2025-09-21T19:36:50,30,1,Priority Scheduling
+2025-09-21T19:36:55,15,0,Shortest Job First
+2025-09-21T19:37:00,35,1,Priority Scheduling
+2025-09-21T19:37:05,34,0,Round Robin
+2025-09-21T19:37:10,16,0,Round Robin
+2025-09-21T19:37:15,15,0,Round Robin
+2025-09-21T19:37:20,16,1,Priority Scheduling
+2025-09-21T19:37:25,38,0,Round Robin
+2025-09-21T19:37:30,39,1,Priority Scheduling
+2025-09-21T19:37:35,29,0,Round Robin
+2025-09-21T19:37:40,31,0,Shortest Job First
+2025-09-21T19:37:45,29,0,Round Robin
+2025-09-21T19:37:50,40,0,Shortest Job First
+2025-09-21T19:37:55,26,0,Round Robin
+2025-09-21T19:38:00,23,0,Round Robin
+2025-09-21T19:38:05,24,1,Priority Scheduling
+2025-09-21T19:38:10,28,0,Shortest Job First
+2025-09-21T19:38:15,36,1,Priority Scheduling
+2025-09-21T19:38:20,40,0,Shortest Job First
+2025-09-21T19:38:25,32,0,Shortest Job First
+2025-09-21T19:38:30,16,0,Shortest Job First
+2025-09-21T19:38:35,31,0,Round Robin
+2025-09-21T19:38:40,34,1,Priority Scheduling
+2025-09-21T19:38:45,18,0,Shortest Job First
+2025-09-21T19:38:50,39,0,Shortest Job First
+2025-09-21T19:38:55,18,0,Shortest Job First
+2025-09-21T19:39:00,29,0,Round Robin
+2025-09-21T19:39:05,18,0,Round Robin
+2025-09-21T19:39:10,36,0,Round Robin
+2025-09-21T19:39:15,31,1,Priority Scheduling
+2025-09-21T19:39:20,34,0,Shortest Job First
+2025-09-21T19:39:25,22,1,Priority Scheduling
+2025-09-21T19:39:30,24,0,Round Robin
+2025-09-21T19:39:35,39,1,Priority Scheduling
+2025-09-21T19:39:40,17,1,Priority Scheduling
+2025-09-21T19:39:45,27,0,Shortest Job First
+2025-09-21T19:39:50,24,0,Shortest Job First
+2025-09-21T19:39:55,36,0,Round Robin
+2025-09-21T19:40:00,15,1,Priority Scheduling
+2025-09-21T19:40:05,18,1,Priority Scheduling
+2025-09-21T19:40:10,30,0,Shortest Job First
+2025-09-21T19:40:15,19,0,Shortest Job First
+2025-09-21T19:40:20,30,0,Shortest Job First
+2025-09-21T19:40:25,17,1,Priority Scheduling
+2025-09-21T19:40:30,31,0,Round Robin
+2025-09-21T19:40:35,38,1,Priority Scheduling
+2025-09-21T19:40:40,25,0,Round Robin
+2025-09-21T19:40:45,37,0,Round Robin
+2025-09-21T19:40:50,20,1,Priority Scheduling
+2025-09-21T19:40:55,17,1,Priority Scheduling
+2025-09-21T19:41:00,28,0,Shortest Job First
+2025-09-21T19:41:05,35,1,Priority Scheduling
+2025-09-21T19:41:10,35,1,Priority Scheduling
+2025-09-21T19:41:15,33,1,Priority Scheduling
+2025-09-21T19:41:20,25,0,Shortest Job First
+2025-09-21T19:41:25,29,0,Round Robin
+2025-09-21T19:41:30,22,0,Round Robin
+2025-09-21T19:41:35,29,0,Round Robin
+2025-09-21T19:41:40,36,0,Shortest Job First
+2025-09-21T19:41:45,32,1,Priority Scheduling
+2025-09-21T19:41:50,17,0,Round Robin
+2025-09-21T19:41:55,39,0,Round Robin
+2025-09-21T19:42:00,16,1,Priority Scheduling
+2025-09-21T19:42:05,35,0,Round Robin
+2025-09-21T19:42:10,25,1,Priority Scheduling
+2025-09-21T19:42:15,21,0,Shortest Job First
+2025-09-21T19:42:20,19,0,Shortest Job First
+2025-09-21T19:42:25,16,1,Priority Scheduling
+2025-09-21T19:42:30,25,0,Round Robin
+2025-09-21T19:42:35,30,1,Priority Scheduling
+2025-09-21T19:42:40,37,0,Round Robin
+2025-09-21T19:42:45,30,0,Round Robin
+2025-09-21T19:42:50,16,0,Round Robin
+2025-09-21T19:42:55,33,1,Priority Scheduling
+2025-09-21T19:43:00,37,0,Shortest Job First
+2025-09-21T19:43:05,15,1,Priority Scheduling
+2025-09-21T19:43:10,34,0,Round Robin
+2025-09-21T19:43:15,22,0,Shortest Job First
+2025-09-21T19:43:20,29,1,Priority Scheduling
+2025-09-21T19:43:25,28,1,Priority Scheduling
+2025-09-21T19:43:30,39,1,Priority Scheduling
+2025-09-21T19:43:35,39,0,Round Robin
+2025-09-21T19:43:40,19,1,Priority Scheduling
+2025-09-21T19:43:45,38,0,Round Robin
+2025-09-21T19:43:50,17,0,Round Robin
+2025-09-21T19:43:55,27,0,Round Robin
+2025-09-21T19:44:00,20,0,Shortest Job First
+2025-09-21T19:44:05,26,1,Priority Scheduling
+2025-09-21T19:44:10,15,1,Priority Scheduling
+2025-09-21T19:44:15,27,0,Shortest Job First
+2025-09-21T19:44:20,16,0,Round Robin
+2025-09-21T19:44:25,27,0,Round Robin
+2025-09-21T19:44:30,23,1,Priority Scheduling
+2025-09-21T19:44:35,36,0,Shortest Job First
+2025-09-21T19:44:40,23,0,Shortest Job First
+2025-09-21T19:44:45,27,0,Round Robin
+2025-09-21T19:44:50,15,0,Round Robin
+2025-09-21T19:44:55,26,0,Round Robin
+2025-09-21T19:45:00,36,1,Priority Scheduling
+2025-09-21T19:45:05,39,0,Shortest Job First
+2025-09-21T19:45:10,17,0,Shortest Job First
+2025-09-21T19:45:15,38,0,Shortest Job First
+2025-09-21T19:45:20,22,0,Round Robin
+2025-09-21T19:45:25,35,0,Shortest Job First
+2025-09-21T19:45:30,16,1,Priority Scheduling
+2025-09-21T19:45:35,32,1,Priority Scheduling
+2025-09-21T19:45:40,34,1,Priority Scheduling
+2025-09-21T19:45:45,33,0,Round Robin
+2025-09-21T19:45:50,25,0,Round Robin
+2025-09-21T19:45:55,39,1,Priority Scheduling
+2025-09-21T19:46:00,22,1,Priority Scheduling
+2025-09-21T19:46:05,28,0,Shortest Job First
+2025-09-21T19:46:10,30,1,Priority Scheduling
+2025-09-21T19:46:15,31,0,Shortest Job First
+2025-09-21T19:46:20,28,0,Shortest Job First
+2025-09-21T19:46:25,39,0,Shortest Job First
+2025-09-21T19:46:30,31,0,Round Robin
+2025-09-21T19:46:35,17,0,Round Robin
+2025-09-21T19:46:40,37,0,Shortest Job First
+2025-09-21T19:46:45,30,0,Round Robin
+2025-09-21T19:46:50,22,0,Shortest Job First
+2025-09-21T19:46:55,27,0,Shortest Job First
+2025-09-21T19:47:00,15,1,Priority Scheduling
+2025-09-21T19:47:05,15,0,Shortest Job First
+2025-09-21T19:47:10,28,1,Priority Scheduling
+2025-09-21T19:47:15,38,0,Round Robin
+2025-09-21T19:47:20,22,0,Shortest Job First
+2025-09-21T19:47:25,37,0,Round Robin
+2025-09-21T19:47:30,15,1,Priority Scheduling
+2025-09-21T19:47:35,15,1,Priority Scheduling
+2025-09-21T19:47:40,26,1,Priority Scheduling
+2025-09-21T19:47:45,17,0,Shortest Job First
+2025-09-21T19:47:50,22,0,Round Robin
+2025-09-21T19:47:55,22,0,Round Robin
+2025-09-21T19:48:00,30,1,Priority Scheduling
+2025-09-21T19:48:05,40,0,Shortest Job First
+2025-09-21T19:48:10,29,0,Shortest Job First
+2025-09-21T19:48:15,39,0,Round Robin
+2025-09-21T19:48:20,27,0,Round Robin
+2025-09-21T19:48:25,37,0,Round Robin
+2025-09-21T19:48:30,20,0,Round Robin
+2025-09-21T19:48:35,36,1,Priority Scheduling
+2025-09-21T19:48:40,15,0,Round Robin
+2025-09-21T19:48:45,29,0,Round Robin
+2025-09-21T19:48:50,22,0,Round Robin
+2025-09-21T19:48:55,19,0,Shortest Job First
+2025-09-21T19:49:00,17,0,Shortest Job First
+2025-09-21T19:49:05,30,0,Shortest Job First
+2025-09-21T19:49:10,18,0,Shortest Job First
+2025-09-21T19:49:15,35,0,Round Robin
+2025-09-21T19:49:20,23,1,Priority Scheduling
+2025-09-21T19:49:25,21,0,Shortest Job First
+2025-09-21T19:49:30,27,0,Round Robin
+2025-09-21T19:49:35,18,0,Round Robin
+2025-09-21T19:49:40,40,0,Shortest Job First
+2025-09-21T19:49:45,38,0,Round Robin
+2025-09-21T19:49:50,24,1,Priority Scheduling
+2025-09-21T19:49:55,21,0,Shortest Job First
+2025-09-21T19:50:00,35,0,Shortest Job First
+2025-09-21T19:50:05,35,0,Round Robin
+2025-09-21T19:50:10,37,0,Round Robin
+2025-09-21T19:50:15,16,0,Shortest Job First
+2025-09-21T19:50:20,19,1,Priority Scheduling
+2025-09-21T19:50:25,31,0,Round Robin
+2025-09-21T19:50:30,29,1,Priority Scheduling
+2025-09-21T19:50:35,24,0,Round Robin
+2025-09-21T19:50:40,23,1,Priority Scheduling
+2025-09-21T19:50:45,32,0,Shortest Job First
+2025-09-21T19:50:50,21,1,Priority Scheduling
+2025-09-21T19:50:55,40,1,Priority Scheduling
+2025-09-21T19:51:00,32,0,Round Robin
+2025-09-21T19:51:05,29,1,Priority Scheduling
+2025-09-21T19:51:10,34,1,Priority Scheduling
+2025-09-21T19:51:15,25,0,Round Robin
+2025-09-21T19:51:20,39,0,Round Robin
+2025-09-21T19:51:25,30,0,Round Robin
+2025-09-21T19:51:30,25,0,Shortest Job First
+2025-09-21T19:51:35,25,0,Shortest Job First
+2025-09-21T19:51:40,32,0,Round Robin
+2025-09-21T19:51:45,34,0,Shortest Job First
+2025-09-21T19:51:50,26,0,Round Robin
+2025-09-21T19:51:55,15,0,Shortest Job First
+2025-09-21T19:52:00,37,0,Round Robin
+2025-09-21T19:52:05,17,1,Priority Scheduling
+2025-09-21T19:52:10,32,0,Shortest Job First
+2025-09-21T19:52:15,15,0,Shortest Job First
+2025-09-21T19:52:20,18,0,Shortest Job First
+2025-09-21T19:52:25,18,1,Priority Scheduling
+2025-09-21T19:52:30,25,1,Priority Scheduling
+2025-09-21T19:52:35,32,0,Round Robin
+2025-09-21T19:52:40,40,0,Round Robin
+2025-09-21T19:52:45,22,1,Priority Scheduling
+2025-09-21T19:52:50,19,0,Shortest Job First
+2025-09-21T19:52:55,39,1,Priority Scheduling
+2025-09-21T19:53:00,16,0,Round Robin
+2025-09-21T19:53:05,34,0,Round Robin
+2025-09-21T19:53:10,25,0,Round Robin
+2025-09-21T19:53:15,29,0,Round Robin
+2025-09-21T19:53:20,36,0,Round Robin
+2025-09-21T19:53:25,35,0,Round Robin
+2025-09-21T19:53:30,19,1,Priority Scheduling
+2025-09-21T19:53:35,33,0,Round Robin
+2025-09-21T19:53:40,25,1,Priority Scheduling
+2025-09-21T19:53:45,31,0,Round Robin
+2025-09-21T19:53:50,18,0,Round Robin
+2025-09-21T19:53:55,21,0,Shortest Job First
+2025-09-21T19:54:00,34,1,Priority Scheduling
+2025-09-21T19:54:05,36,0,Shortest Job First
+2025-09-21T19:54:10,37,0,Shortest Job First
+2025-09-21T19:54:15,18,0,Round Robin
+2025-09-21T19:54:20,18,0,Round Robin
+2025-09-21T19:54:25,34,0,Shortest Job First
+2025-09-21T19:54:30,32,0,Shortest Job First
+2025-09-21T19:54:35,27,0,Shortest Job First
+2025-09-21T19:54:40,39,0,Shortest Job First
+2025-09-21T19:54:45,19,0,Round Robin
+2025-09-21T19:54:50,28,0,Round Robin
+2025-09-21T19:54:55,22,0,Shortest Job First
+2025-09-21T19:55:00,15,0,Round Robin
+2025-09-21T19:55:05,33,0,Shortest Job First
+2025-09-21T19:55:10,27,0,Shortest Job First
+2025-09-21T19:55:15,26,0,Shortest Job First
+2025-09-21T19:55:20,34,0,Round Robin
+2025-09-21T19:55:25,16,0,Shortest Job First
+2025-09-21T19:55:30,22,1,Priority Scheduling
+2025-09-21T19:55:35,37,1,Priority Scheduling
+2025-09-21T19:55:40,31,1,Priority Scheduling
+2025-09-21T19:55:45,33,0,Shortest Job First
+2025-09-21T19:55:50,21,0,Round Robin
+2025-09-21T19:55:55,35,0,Shortest Job First
+2025-09-21T19:56:00,35,0,Shortest Job First
+2025-09-21T19:56:05,20,1,Priority Scheduling
+2025-09-21T19:56:10,33,0,Round Robin
+2025-09-21T19:56:15,18,0,Round Robin
+2025-09-21T19:56:20,19,0,Round Robin
+2025-09-21T19:56:25,22,1,Priority Scheduling
+2025-09-21T19:56:30,18,0,Shortest Job First
+2025-09-21T19:56:35,36,0,Shortest Job First
+2025-09-21T19:56:40,33,1,Priority Scheduling
+2025-09-21T19:56:45,21,0,Round Robin
+2025-09-21T19:56:50,16,1,Priority Scheduling
+2025-09-21T19:56:55,39,0,Shortest Job First
+2025-09-21T19:57:00,16,0,Shortest Job First
+2025-09-21T19:57:05,38,0,Shortest Job First
+2025-09-21T19:57:10,36,0,Shortest Job First
+2025-09-21T19:57:15,33,1,Priority Scheduling
+2025-09-21T19:57:20,27,0,Round Robin
+2025-09-21T19:57:25,32,1,Priority Scheduling
+2025-09-21T19:57:30,21,0,Shortest Job First
+2025-09-21T19:57:35,23,0,Round Robin
+2025-09-21T19:57:40,29,0,Round Robin
+2025-09-21T19:57:45,39,0,Round Robin
+2025-09-21T19:57:50,23,1,Priority Scheduling
+2025-09-21T19:57:55,17,0,Shortest Job First
+2025-09-21T19:58:00,40,0,Shortest Job First
+2025-09-21T19:58:05,16,0,Round Robin
+2025-09-21T19:58:10,32,0,Round Robin
+2025-09-21T19:58:15,17,1,Priority Scheduling
+2025-09-21T19:58:20,17,0,Round Robin
+2025-09-21T19:58:25,15,0,Round Robin
+2025-09-21T19:58:30,28,0,Round Robin
+2025-09-21T19:58:35,15,0,Round Robin
+2025-09-21T19:58:40,23,0,Round Robin
+2025-09-21T19:58:45,21,0,Round Robin
+2025-09-21T19:58:50,17,0,Round Robin
+2025-09-21T19:58:55,32,0,Round Robin
+2025-09-21T19:59:00,18,0,Round Robin
+2025-09-21T19:59:05,26,0,Shortest Job First
+2025-09-21T19:59:10,32,0,Shortest Job First
+2025-09-21T19:59:15,24,0,Round Robin
+2025-09-21T19:59:20,23,1,Priority Scheduling
+2025-09-21T19:59:25,23,1,Priority Scheduling
+2025-09-21T19:59:30,26,0,Shortest Job First
+2025-09-21T19:59:35,39,1,Priority Scheduling
+2025-09-21T19:59:40,36,0,Round Robin
+2025-09-21T19:59:45,35,0,Shortest Job First
+2025-09-21T19:59:50,30,0,Shortest Job First
+2025-09-21T19:59:55,37,0,Round Robin
+2025-09-21T20:00:00,30,0,Round Robin
+2025-09-21T20:00:05,30,0,Shortest Job First
+2025-09-21T20:00:10,19,0,Shortest Job First
+2025-09-21T20:00:15,37,1,Priority Scheduling
+2025-09-21T20:00:20,21,0,Shortest Job First
+2025-09-21T20:00:25,23,0,Round Robin
+2025-09-21T20:00:30,33,0,Round Robin
+2025-09-21T20:00:35,15,0,Shortest Job First
+2025-09-21T20:00:40,33,0,Round Robin
+2025-09-21T20:00:45,38,0,Shortest Job First
+2025-09-21T20:00:50,39,0,Shortest Job First
+2025-09-21T20:00:55,35,0,Round Robin
+2025-09-21T20:01:00,26,0,Shortest Job First
+2025-09-21T20:01:05,17,0,Shortest Job First
+2025-09-21T20:01:10,27,0,Round Robin
+2025-09-21T20:01:15,32,0,Round Robin
+2025-09-21T20:01:20,22,0,Shortest Job First
+2025-09-21T20:01:25,33,0,Round Robin
+2025-09-21T20:01:30,20,0,Round Robin
+2025-09-21T20:01:35,15,1,Priority Scheduling
+2025-09-21T20:01:40,17,0,Round Robin
+2025-09-21T20:01:45,29,1,Priority Scheduling
+2025-09-21T20:01:50,27,1,Priority Scheduling
+2025-09-21T20:01:55,39,0,Shortest Job First
+2025-09-21T20:02:00,26,1,Priority Scheduling
+2025-09-21T20:02:05,35,0,Round Robin
+2025-09-21T20:02:10,21,0,Round Robin
+2025-09-21T20:02:15,31,1,Priority Scheduling
+2025-09-21T20:02:20,23,1,Priority Scheduling
+2025-09-21T20:02:25,38,0,Round Robin
+2025-09-21T20:02:30,25,0,Round Robin
+2025-09-21T20:02:35,34,0,Shortest Job First
+2025-09-21T20:02:40,26,1,Priority Scheduling
+2025-09-21T20:02:45,17,0,Shortest Job First
+2025-09-21T20:02:50,25,0,Round Robin
+2025-09-21T20:02:55,26,0,Round Robin
+2025-09-21T20:03:00,21,1,Priority Scheduling
+2025-09-21T20:03:05,25,0,Shortest Job First
+2025-09-21T20:03:10,15,0,Round Robin
+2025-09-21T20:03:15,35,0,Round Robin
+2025-09-21T20:03:20,40,0,Round Robin
+2025-09-21T20:03:25,22,0,Round Robin
+2025-09-21T20:03:30,23,0,Round Robin
+2025-09-21T20:03:35,28,0,Shortest Job First
+2025-09-21T20:03:40,22,1,Priority Scheduling
+2025-09-21T20:03:45,24,0,Shortest Job First
+2025-09-21T20:03:50,15,0,Shortest Job First
+2025-09-21T20:03:55,38,0,Round Robin
+2025-09-21T20:04:00,20,1,Priority Scheduling
+2025-09-21T20:04:05,15,0,Round Robin
+2025-09-21T20:04:10,27,0,Shortest Job First
+2025-09-21T20:04:15,40,1,Priority Scheduling
+2025-09-21T20:04:20,22,0,Shortest Job First
+2025-09-21T20:04:25,39,0,Round Robin
+2025-09-21T20:04:30,27,1,Priority Scheduling
+2025-09-21T20:04:35,40,1,Priority Scheduling
+2025-09-21T20:04:40,32,1,Priority Scheduling
+2025-09-21T20:04:45,18,1,Priority Scheduling
+2025-09-21T20:04:50,30,1,Priority Scheduling
+2025-09-21T20:04:55,22,0,Round Robin
+2025-09-21T20:05:00,16,0,Round Robin
+2025-09-21T20:05:05,39,1,Priority Scheduling
+2025-09-21T20:05:10,31,0,Shortest Job First
+2025-09-21T20:05:15,37,1,Priority Scheduling
+2025-09-21T20:05:20,30,1,Priority Scheduling
+2025-09-21T20:05:25,17,0,Shortest Job First
+2025-09-21T20:05:30,36,1,Priority Scheduling
+2025-09-21T20:05:35,27,1,Priority Scheduling
+2025-09-21T20:05:40,39,1,Priority Scheduling
+2025-09-21T20:05:45,40,1,Priority Scheduling
+2025-09-21T20:05:50,18,1,Priority Scheduling
+2025-09-21T20:05:55,15,0,Round Robin
+2025-09-21T20:06:00,22,1,Priority Scheduling
+2025-09-21T20:06:05,32,0,Shortest Job First
+2025-09-21T20:06:10,16,0,Shortest Job First
+2025-09-21T20:06:15,21,0,Round Robin
+2025-09-21T20:06:20,19,0,Round Robin
+2025-09-21T20:06:25,30,0,Shortest Job First
+2025-09-21T20:06:30,32,1,Priority Scheduling
+2025-09-21T20:06:35,38,0,Round Robin
+2025-09-21T20:06:40,33,1,Priority Scheduling
+2025-09-21T20:06:45,20,0,Round Robin
+2025-09-21T20:06:50,17,0,Round Robin
+2025-09-21T20:06:55,16,0,Round Robin
+2025-09-21T20:07:00,18,0,Shortest Job First
+2025-09-21T20:07:05,24,1,Priority Scheduling
+2025-09-21T20:07:10,31,0,Shortest Job First
+2025-09-21T20:07:15,36,0,Round Robin
+2025-09-21T20:07:20,27,0,Round Robin
+2025-09-21T20:07:25,40,1,Priority Scheduling
+2025-09-21T20:07:30,38,0,Round Robin
+2025-09-21T20:07:35,15,0,Shortest Job First
+2025-09-21T20:07:40,34,0,Round Robin
+2025-09-21T20:07:45,39,1,Priority Scheduling
+2025-09-21T20:07:50,18,1,Priority Scheduling
+2025-09-21T20:07:55,24,0,Round Robin
+2025-09-21T20:08:00,40,0,Shortest Job First
+2025-09-21T20:08:05,30,0,Shortest Job First
+2025-09-21T20:08:10,37,1,Priority Scheduling
+2025-09-21T20:08:15,33,1,Priority Scheduling
+2025-09-21T20:08:20,32,0,Shortest Job First
+2025-09-21T20:08:25,21,0,Shortest Job First
+2025-09-21T20:08:30,15,0,Shortest Job First
+2025-09-21T20:08:35,21,0,Round Robin
+2025-09-21T20:08:40,17,1,Priority Scheduling
+2025-09-21T20:08:45,39,0,Shortest Job First
+2025-09-21T20:08:50,22,0,Round Robin
+2025-09-21T20:08:55,24,1,Priority Scheduling
+2025-09-21T20:09:00,20,0,Shortest Job First
+2025-09-21T20:09:05,24,0,Shortest Job First
+2025-09-21T20:09:10,16,0,Shortest Job First
+2025-09-21T20:09:15,18,1,Priority Scheduling
+2025-09-21T20:09:20,22,0,Shortest Job First
+2025-09-21T20:09:25,15,0,Round Robin
+2025-09-21T20:09:30,28,1,Priority Scheduling
+2025-09-21T20:09:35,15,0,Shortest Job First
+2025-09-21T20:09:40,22,1,Priority Scheduling
+2025-09-21T20:09:45,30,0,Shortest Job First
+2025-09-21T20:09:50,38,1,Priority Scheduling
+2025-09-21T20:09:55,26,0,Shortest Job First
+2025-09-21T20:10:00,22,0,Round Robin
+2025-09-21T20:10:05,23,0,Shortest Job First
+2025-09-21T20:10:10,17,0,Shortest Job First
+2025-09-21T20:10:15,38,1,Priority Scheduling
+2025-09-21T20:10:20,25,0,Round Robin
+2025-09-21T20:10:25,34,0,Round Robin
+2025-09-21T20:10:30,30,0,Shortest Job First
+2025-09-21T20:10:35,21,1,Priority Scheduling
+2025-09-21T20:10:40,19,0,Shortest Job First
+2025-09-21T20:10:45,31,0,Round Robin
+2025-09-21T20:10:50,20,0,Round Robin
+2025-09-21T20:10:55,20,1,Priority Scheduling
+2025-09-21T20:11:00,32,0,Round Robin
+2025-09-21T20:11:05,33,0,Shortest Job First
+2025-09-21T20:11:10,27,1,Priority Scheduling
+2025-09-21T20:11:15,30,1,Priority Scheduling
+2025-09-21T20:11:20,33,0,Round Robin
+2025-09-21T20:11:25,25,0,Round Robin
+2025-09-21T20:11:30,30,0,Round Robin
+2025-09-21T20:11:35,34,0,Round Robin
+2025-09-21T20:11:40,38,0,Shortest Job First
+2025-09-21T20:11:45,40,0,Shortest Job First
+2025-09-21T20:11:50,15,0,Round Robin
+2025-09-21T20:11:55,40,0,Shortest Job First
+2025-09-21T20:12:00,32,0,Shortest Job First
+2025-09-21T20:12:05,39,0,Round Robin
+2025-09-21T20:12:10,18,0,Shortest Job First
+2025-09-21T20:12:15,38,0,Round Robin
+2025-09-21T20:12:20,39,0,Round Robin
+2025-09-21T20:12:25,28,0,Round Robin
+2025-09-21T20:12:30,24,1,Priority Scheduling
+2025-09-21T20:12:35,20,1,Priority Scheduling
+2025-09-21T20:12:40,30,1,Priority Scheduling
+2025-09-21T20:12:45,16,0,Shortest Job First
+2025-09-21T20:12:50,15,0,Round Robin
+2025-09-21T20:12:55,20,0,Shortest Job First
+2025-09-21T20:13:00,21,1,Priority Scheduling
+2025-09-21T20:13:05,36,1,Priority Scheduling
+2025-09-21T20:13:10,26,1,Priority Scheduling
+2025-09-21T20:13:15,15,0,Shortest Job First
+2025-09-21T20:13:20,22,1,Priority Scheduling
+2025-09-21T20:13:25,35,0,Shortest Job First
+2025-09-21T20:13:30,40,0,Shortest Job First
+2025-09-21T20:13:35,20,0,Shortest Job First
+2025-09-21T20:13:40,30,0,Round Robin
+2025-09-21T20:13:45,19,0,Round Robin
+2025-09-21T20:13:50,18,0,Shortest Job First
+2025-09-21T20:13:55,17,0,Round Robin
+2025-09-21T20:14:00,31,1,Priority Scheduling
+2025-09-21T20:14:05,20,1,Priority Scheduling
+2025-09-21T20:14:10,26,1,Priority Scheduling
+2025-09-21T20:14:15,19,1,Priority Scheduling
+2025-09-21T20:14:20,22,1,Priority Scheduling
+2025-09-21T20:14:25,15,0,Round Robin
+2025-09-21T20:14:30,29,1,Priority Scheduling
+2025-09-21T20:14:35,27,0,Round Robin
+2025-09-21T20:14:40,36,1,Priority Scheduling
+2025-09-21T20:14:45,25,0,Shortest Job First
+2025-09-21T20:14:50,16,0,Shortest Job First
+2025-09-21T20:14:55,20,1,Priority Scheduling
+2025-09-21T20:15:00,39,0,Shortest Job First
+2025-09-21T20:15:05,35,0,Shortest Job First
+2025-09-21T20:15:10,31,0,Round Robin
+2025-09-21T20:15:15,19,0,Shortest Job First
+2025-09-21T20:15:20,39,0,Round Robin
+2025-09-21T20:15:25,31,1,Priority Scheduling
+2025-09-21T20:15:30,30,1,Priority Scheduling
+2025-09-21T20:15:35,34,0,Round Robin
+2025-09-21T20:15:40,26,0,Shortest Job First
+2025-09-21T20:15:45,40,1,Priority Scheduling
+2025-09-21T20:15:50,32,1,Priority Scheduling
+2025-09-21T20:15:55,24,0,Round Robin
+2025-09-21T20:16:00,18,0,Shortest Job First
+2025-09-21T20:16:05,19,1,Priority Scheduling
+2025-09-21T20:16:10,26,0,Shortest Job First
+2025-09-21T20:16:15,38,0,Round Robin
+2025-09-21T20:16:20,39,0,Round Robin
+2025-09-21T20:16:25,34,0,Round Robin
+2025-09-21T20:16:30,27,0,Round Robin
+2025-09-21T20:16:35,20,0,Shortest Job First
+2025-09-21T20:16:40,30,1,Priority Scheduling
+2025-09-21T20:16:45,28,0,Round Robin
+2025-09-21T20:16:50,35,0,Round Robin
+2025-09-21T20:16:55,29,0,Round Robin
+2025-09-21T20:17:00,27,1,Priority Scheduling
+2025-09-21T20:17:05,15,1,Priority Scheduling
+2025-09-21T20:17:10,27,0,Shortest Job First
+2025-09-21T20:17:15,26,0,Round Robin
+2025-09-21T20:17:20,25,0,Round Robin
+2025-09-21T20:17:25,38,0,Shortest Job First
+2025-09-21T20:17:30,23,1,Priority Scheduling
+2025-09-21T20:17:35,27,0,Shortest Job First
+2025-09-21T20:17:40,35,1,Priority Scheduling
+2025-09-21T20:17:45,37,0,Round Robin
+2025-09-21T20:17:50,15,1,Priority Scheduling
+2025-09-21T20:17:55,25,0,Round Robin
+2025-09-21T20:18:00,28,0,Shortest Job First
+2025-09-21T20:18:05,29,0,Shortest Job First
+2025-09-21T20:18:10,26,1,Priority Scheduling
+2025-09-21T20:18:15,27,0,Shortest Job First
+2025-09-21T20:18:20,16,1,Priority Scheduling
+2025-09-21T20:18:25,27,0,Round Robin
+2025-09-21T20:18:30,26,1,Priority Scheduling
+2025-09-21T20:18:35,31,1,Priority Scheduling
+2025-09-21T20:18:40,35,0,Shortest Job First
+2025-09-21T20:18:45,32,0,Shortest Job First
+2025-09-21T20:18:50,16,0,Shortest Job First
+2025-09-21T20:18:55,22,1,Priority Scheduling
+2025-09-21T20:19:00,30,0,Shortest Job First
+2025-09-21T20:19:05,37,0,Shortest Job First
+2025-09-21T20:19:10,24,0,Round Robin
+2025-09-21T20:19:15,40,1,Priority Scheduling
+2025-09-21T20:19:20,25,0,Round Robin
+2025-09-21T20:19:25,32,0,Round Robin
+2025-09-21T20:19:30,36,0,Round Robin
+2025-09-21T20:19:35,35,0,Round Robin
+2025-09-21T20:19:40,26,0,Shortest Job First
+2025-09-21T20:19:45,30,0,Shortest Job First
+2025-09-21T20:19:50,38,0,Shortest Job First
+2025-09-21T20:19:55,21,0,Round Robin
+2025-09-21T20:20:00,35,0,Round Robin
+2025-09-21T20:20:05,24,0,Round Robin
+2025-09-21T20:20:10,22,1,Priority Scheduling
+2025-09-21T20:20:15,18,0,Round Robin
+2025-09-21T20:20:20,26,0,Round Robin
+2025-09-21T20:20:25,39,0,Round Robin
+2025-09-21T20:20:30,37,1,Priority Scheduling
+2025-09-21T20:20:35,20,0,Shortest Job First
+2025-09-21T20:20:40,15,0,Round Robin
+2025-09-21T20:20:45,19,1,Priority Scheduling
+2025-09-21T20:20:50,30,0,Round Robin
+2025-09-21T20:20:55,17,1,Priority Scheduling
+2025-09-21T20:21:00,31,1,Priority Scheduling
+2025-09-21T20:21:05,32,0,Round Robin
+2025-09-21T20:21:10,33,1,Priority Scheduling
+2025-09-21T20:21:15,36,1,Priority Scheduling
+2025-09-21T20:21:20,32,0,Shortest Job First
+2025-09-21T20:21:25,36,0,Round Robin
+2025-09-21T20:21:30,28,1,Priority Scheduling
+2025-09-21T20:21:35,16,0,Round Robin
+2025-09-21T20:21:40,29,1,Priority Scheduling
+2025-09-21T20:21:45,30,0,Round Robin
+2025-09-21T20:21:50,16,0,Round Robin
+2025-09-21T20:21:55,27,1,Priority Scheduling
+2025-09-21T20:22:00,26,0,Round Robin
+2025-09-21T20:22:05,29,1,Priority Scheduling
+2025-09-21T20:22:10,25,0,Shortest Job First
+2025-09-21T20:22:15,32,1,Priority Scheduling
+2025-09-21T20:22:20,39,0,Shortest Job First
+2025-09-21T20:22:25,37,1,Priority Scheduling
+2025-09-21T20:22:30,20,0,Round Robin
+2025-09-21T20:22:35,37,0,Shortest Job First
+2025-09-21T20:22:40,31,1,Priority Scheduling
+2025-09-21T20:22:45,30,0,Shortest Job First
+2025-09-21T20:22:50,20,0,Shortest Job First
+2025-09-21T20:22:55,24,0,Round Robin
+2025-09-21T20:23:00,15,0,Shortest Job First
+2025-09-21T20:23:05,31,1,Priority Scheduling
+2025-09-21T20:23:10,30,1,Priority Scheduling
+2025-09-21T20:23:15,33,1,Priority Scheduling
+2025-09-21T20:23:20,39,0,Shortest Job First
+2025-09-21T20:23:25,26,0,Shortest Job First
+2025-09-21T20:23:30,34,0,Shortest Job First
+2025-09-21T20:23:35,28,0,Shortest Job First
+2025-09-21T20:23:40,19,0,Round Robin
+2025-09-21T20:23:45,25,0,Shortest Job First
+2025-09-21T20:23:50,37,0,Round Robin
+2025-09-21T20:23:55,32,0,Round Robin
+2025-09-21T20:24:00,32,1,Priority Scheduling
+2025-09-21T20:24:05,24,0,Round Robin
+2025-09-21T20:24:10,16,1,Priority Scheduling
+2025-09-21T20:24:15,36,0,Shortest Job First
+2025-09-21T20:24:20,37,1,Priority Scheduling
+2025-09-21T20:24:25,24,1,Priority Scheduling
+2025-09-21T20:24:30,28,0,Shortest Job First
+2025-09-21T20:24:35,36,0,Shortest Job First
+2025-09-21T20:24:40,16,0,Round Robin
+2025-09-21T20:24:45,39,1,Priority Scheduling
+2025-09-21T20:24:50,34,0,Round Robin
+2025-09-21T20:24:55,23,0,Shortest Job First
+2025-09-21T20:25:00,15,0,Shortest Job First
+2025-09-21T20:25:05,19,1,Priority Scheduling
+2025-09-21T20:25:10,20,1,Priority Scheduling
+2025-09-21T20:25:15,25,0,Round Robin
+2025-09-21T20:25:20,17,0,Shortest Job First
+2025-09-21T20:25:25,28,0,Round Robin
+2025-09-21T20:25:30,30,0,Round Robin
+2025-09-21T20:25:35,32,1,Priority Scheduling
+2025-09-21T20:25:40,35,0,Round Robin
+2025-09-21T20:25:45,31,1,Priority Scheduling
+2025-09-21T20:25:50,30,1,Priority Scheduling
+2025-09-21T20:25:55,24,0,Round Robin
+2025-09-21T20:26:00,23,1,Priority Scheduling
+2025-09-21T20:26:05,24,0,Round Robin
+2025-09-21T20:26:10,27,0,Shortest Job First
+2025-09-21T20:26:15,15,0,Round Robin
+2025-09-21T20:26:20,38,0,Shortest Job First
+2025-09-21T20:26:25,25,0,Shortest Job First
+2025-09-21T20:26:30,34,0,Shortest Job First
+2025-09-21T20:26:35,19,0,Shortest Job First
+2025-09-21T20:26:40,29,0,Shortest Job First
+2025-09-21T20:26:45,36,0,Shortest Job First
+2025-09-21T20:26:50,19,0,Round Robin
+2025-09-21T20:26:55,19,0,Shortest Job First
+2025-09-21T20:27:00,28,0,Shortest Job First
+2025-09-21T20:27:05,39,0,Shortest Job First
+2025-09-21T20:27:10,22,1,Priority Scheduling
+2025-09-21T20:27:15,34,0,Round Robin
+2025-09-21T20:27:20,35,0,Shortest Job First
+2025-09-21T20:27:25,17,0,Shortest Job First
+2025-09-21T20:27:30,32,0,Shortest Job First
+2025-09-21T20:27:35,23,1,Priority Scheduling
+2025-09-21T20:27:40,22,1,Priority Scheduling
+2025-09-21T20:27:45,27,1,Priority Scheduling
+2025-09-21T20:27:50,30,0,Shortest Job First
+2025-09-21T20:27:55,29,0,Round Robin
+2025-09-21T20:28:00,32,1,Priority Scheduling
+2025-09-21T20:28:05,35,1,Priority Scheduling
+2025-09-21T20:28:10,34,0,Round Robin
+2025-09-21T20:28:15,26,1,Priority Scheduling
+2025-09-21T20:28:20,38,0,Round Robin
+2025-09-21T20:28:25,17,1,Priority Scheduling
+2025-09-21T20:28:30,15,0,Round Robin
+2025-09-21T20:28:35,36,0,Shortest Job First
+2025-09-21T20:28:40,32,1,Priority Scheduling
+2025-09-21T20:28:45,33,0,Round Robin
+2025-09-21T20:28:50,28,0,Shortest Job First
+2025-09-21T20:28:55,40,0,Round Robin
+2025-09-21T20:29:00,35,0,Shortest Job First
+2025-09-21T20:29:05,22,1,Priority Scheduling
+2025-09-21T20:29:10,21,1,Priority Scheduling
+2025-09-21T20:29:15,15,0,Shortest Job First
+2025-09-21T20:29:20,18,1,Priority Scheduling
+2025-09-21T20:29:25,23,0,Round Robin
+2025-09-21T20:29:30,40,1,Priority Scheduling
+2025-09-21T20:29:35,33,0,Round Robin
+2025-09-21T20:29:40,25,0,Round Robin
+2025-09-21T20:29:45,28,1,Priority Scheduling
+2025-09-21T20:29:50,24,0,Round Robin
+2025-09-21T20:29:55,21,0,Shortest Job First
+2025-09-21T20:30:00,27,1,Priority Scheduling
+2025-09-21T20:30:05,21,0,Shortest Job First
+2025-09-21T20:30:10,20,0,Shortest Job First
+2025-09-21T20:30:15,40,0,Round Robin
+2025-09-21T20:30:20,20,0,Shortest Job First
+2025-09-21T20:30:25,34,1,Priority Scheduling
+2025-09-21T20:30:30,32,0,Round Robin
+2025-09-21T20:30:35,32,1,Priority Scheduling
+2025-09-21T20:30:40,31,0,Shortest Job First
+2025-09-21T20:30:45,30,0,Round Robin
+2025-09-21T20:30:50,26,0,Shortest Job First
+2025-09-21T20:30:55,34,1,Priority Scheduling
+2025-09-21T20:31:00,36,0,Round Robin
+2025-09-21T20:31:05,22,0,Round Robin
+2025-09-21T20:31:10,25,1,Priority Scheduling
+2025-09-21T20:31:15,39,0,Shortest Job First
+2025-09-21T20:31:20,34,0,Round Robin
